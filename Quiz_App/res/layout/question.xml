@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/quiz_background1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/group1"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="2.70"
+        android:background="@drawable/question_background"
+        android:drawablePadding="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="50dp"
+        android:text="this is a test to see how much text can fit into a text window that is stretched across the top of an app"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@id/group1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button01"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:paddingBottom="50dp" >
+
+        <RadioButton
+            android:id="@+id/answer1"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/answer2"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/answer3"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/answer4"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Button01"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClickNext"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="Next" />
+
+    <Button
+        android:id="@id/Button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClickExit"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:text="@string/exit" />
+
+</RelativeLayout>

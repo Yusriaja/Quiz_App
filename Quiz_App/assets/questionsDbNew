@@ -1,0 +1,5 @@
+BEGIN TRANSACTION;
+CREATE TABLE questionsDb (id INTEGER PRIMARY KEY, question TEXT, answer TEXT, incorrect1 TEXT, incorrect2 NUMERIC, incorrect3 TEXT, difficulty NUMERIC);
+INSERT INTO questionsDb VALUES(1,'How much wood could a woodchuck chuck if a wood chuck could chuck wood?','Probably a lot','What kind of woodchuck are we talking about?','None','Test',1);
+INSERT INTO questionsDb VALUES(2,'Test2?','Test 2!','Wrong 1','Nope','Close...',1);
+COMMIT;
